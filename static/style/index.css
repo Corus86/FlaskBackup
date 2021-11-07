@@ -1,0 +1,79 @@
+body {
+    background-color: #F7FFF7;
+    font-family: 'Red Hat Mono', monospace;
+    height: 100vh;
+}
+
+.home_upper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0;
+}
+
+.home_upper > img {
+    width: 60px;
+    height: 60px;
+}
+
+.home_upper > h1 {
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+body > h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 40px;
+}
+
+body > input {
+    width: 200px;
+    margin: 20px auto 0;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    background-color: #ef8c8b;
+}
+
+body > input:focus {
+    outline: none !important;
+    border: none;
+    scale: 1.05;
+}
+
+.searchList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    margin: auto;
+}
+
+.searchList > button {
+    font-size: 20px;
+    font-family: 'Red Hat Mono', monospace;
+    border: none;
+    font-weight: 600;
+    background-color: #ef8c8b;
+    margin: 10px 0 0 0;
+    padding: 5px 10px;
+    border-radius: 10px;
+    animation: transitionIn 0.5s;
+}
+
+.searchList > button:hover {
+    scale: 1.05;
+    cursor: pointer;
+}
+
+@keyframes transitionIn {
+    from {
+        scale: 0;
+    }
+    to {
+        scale: 1;
+    }
+}
