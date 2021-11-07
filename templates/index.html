@@ -1,12 +1,20 @@
-<html>
-<form class="form-inline" method="POST" action="{{ url_for('result') }}">
-    <div class="getname"> 
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value="John"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" value="Doe"><br><br>
-    </div> 
-    <button type="submit" class="btn">Go</button>
-</form>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <title>Mr.Rich</title>
+</head>
+<body>
+    <div className='home_upper'>
+        <img src="{{'static/logo.png'}}" alt='rich_logo'/>
+        <h1>Mr.Rich</h1>
+    </div>
+    <h2>start making easy informed investing decisions today</h2>
+    <input 
+        type='text'
+        placeholder='search...'
+    />
+</body>
 </html>
