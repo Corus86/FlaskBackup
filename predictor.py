@@ -49,5 +49,5 @@ def predictnow(ticker):
     # get the final dataframe for the testing set
     final_df = get_final_df(model, data)
     #store in file
-    rxit_filename = os.path.join("csvs", "{}_final".format(ticker) + "NEW.json")
+    exit_filename = os.path.join("csvs", "{}_final".format(ticker) + "NEW.json")
     final_df.to_json(exit_filename)
