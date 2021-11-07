@@ -8,7 +8,7 @@ import numpy as np
 import pandas as pd
 import random
 
-from param import FILE_NAME
+from periconstant import FILE_NAME
 
 # shuffle two arrays in the same way
 def shuffleuni(a, b):
