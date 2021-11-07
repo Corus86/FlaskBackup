@@ -6,6 +6,7 @@ from sklearn.model_selection import train_test_split
 from collections import deque
 import numpy as np
 import pandas as pd
+import os
 
 # shuffle two arrays in the same way
 def shuffleuni(a, b):
@@ -17,7 +18,8 @@ def shuffleuni(a, b):
 #load data for analysis
 def load_data(ticker, n_steps=50, scale=True, lookup_step=1, test_size=0.2, feature_columns=['open', 'close', 'compound']):
     #read file and create storage device
-    df = pd.read_csv("csvs", "{}_final.csv".format(ticker))
+    readfile = os.path.join("csvs", "{}_final.csv".format(ticker))
+    df = pd.read_csv(readfile)
     result = {}
     result['df'] = df.copy()
 

@@ -51,3 +51,5 @@ def predictnow(ticker):
     #store in file
     exit_filename = os.path.join("csvs", "{}_final".format(ticker) + "NEW.json")
     final_df.to_json(exit_filename)
+
+predictnow("Apple")
